@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* navbar */
+
+#navbar {
+  background: #f9f9f9;
+}
+#logo {
+  font-size: 42px;
+  font-weight: 550;
+  color: black;
+  margin-bottom: 5px;
+  letter-spacing: 8px;
+}
+#logo span {
+  color: blue;
+}
+.navbar-toggler span {
+  color: blue;
+}
+.navbar-nav {
+  margin: auto;
+}
+.nav-item {
+  margin-left: 5px;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
+.nav-item .nav-link:hover {
+  background: blue;
+  color: white;
+}
+#login {
+  background-color: blue;
+  color: #fff;
+}
+#sign {
+  background-color: blue;
+  color: #fff;
+}
+#login:hover {
+  background-color: #fff;
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+#sign:hover {
+  background-color: #fff;
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+/* home slider */
+
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(../images/sagligi-kucaklayin-banner_1920.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5 {
+  color: white;
+  font-size: 38px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+}
+.home .content h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+.changecontent::after {
+  content: " ";
+  color: blue;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+  0% {
+    content: "Gazi Yaşargil";
+  }
+  10% {
+    content: " Münci Kalayoğlu";
+  }
+  20% {
+    content: "Ömer Özkan";
+  }
+  30% {
+    content: "Tayfun Aybek";
+  }
+  40% {
+    content: " Hande Özdinler";
+  }
+  50% {
+    content: " Murat Günel";
+  }
+  60% {
+    content: "Tolga Aksu";
+  }
+  70% {
+    content: "Onur Karagöz";
+  }
+  80% {
+    content: "Nuri Özdemir";
+  }
+  90% {
+    content: "Burak Deniz";
+  }
+  100% {
+    content: "Emre Yılmaz";
+  }
+}
+.home .content p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.home .content a {
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.home .content a:hover {
+  background: blue;
+  color: white;
+  border-bottom: 3px solid #fff;
+}
+@media (max-width: 850px) {
+  .home {
+    background-position: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .home .content h5 {
+    font-size: 25px;
+  }
+  .home .content h1 {
+    font-size: 38px;
+  }
+  .home .content p {
+    font-size: 13px;
+  }
+}
+
+/* sağlık kartları */
+
+.main-txt h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span {
+  color: blue;
+}
+.packages .card {
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.packages .card img {
+  border-radius: 8px;
+}
+.packages .card .card-body {
+  background: transparent;
+}
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.packages .card .card-body p {
+  font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+  font-size: 20px;
+}
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: blue;
+  color: white;
+  border-radius: 8px;
+}
+.saglik-img {
+  height: 250px;
+}
+/* about */
+
+.about {
+  padding: 50px;
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+.about .card {
+  border-radius: 10px;
+}
+.about .card img {
+  border-radius: 10px;
+}
+.about h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p {
+  font-weight: 500;
+}
+#about-btn {
+  width: 250px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background: blue;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover {
+  width: 300px;
+}
+@media (max-width: 765px) {
+  .about {
+    padding: 0;
+  }
+}
+
+.gallary {
+  margin-top: 50px;
+}
+.gallary .card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.gallary .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.gallary .card img:hover {
+  transform: scale(1.1);
+}
+
+.counter {
+  margin-top: 150px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.counter .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.counter .box-container .box {
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.counter .box-container .box i {
+  color: blue;
+  font-size: 50px;
+}
+.counter .box-container .box span {
+  color: black;
+  font-size: 30px;
+  display: block;
+  padding: 10px 0px;
+}
+.counter .box-container .box h3 {
+  color: #444;
+}
+/* footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: blue;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .social_icons,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+footer .social_icons li {
+  list-style: none;
+}
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icons li a {
+  font-size: 24px;
+  color: #fff;
+  margin: 0px 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icons li a:hover {
+  transform: translateY(-10px);
+}
+footer .menu li a {
+  font-size: 20px;
+  color: #fff;
+  margin: 0px 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
